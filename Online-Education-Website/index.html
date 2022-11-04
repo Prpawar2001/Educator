@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educator</title>
+    <link rel="icon" href="favicon.ico">
+
+    <!-- CSS Stylesheet link -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awasome CDN link -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+    <script src="https://kit.fontawesome.com/7dad564b9a.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+    <!-- Heading Section Starts -->
+
+    <header>
+        
+        <a href="index.html" target="_blank" class="logo"><i class="fas fa-graduation-cap"></i>Educator</a>
+
+        <!-- navbar -->
+        <nav class="navbar">
+            <ul>
+                <li><a href="#home" class="active">home</a></li>
+                <li><a href="#about">about</a></li>
+                <li><a href="#teacher">teacher</a></li>
+                <li><a href="#course">course</a></li>
+                <li><a href="#review">review</a></li>
+                <li><a href="#contact">contact</a></li>
+            </ul>
+        </nav>
+        <div>
+            <a href="#home"><button id="login-btn" class="btn">Login</button></a>
+            <a href="#home"><button id="sign-up-btn" class="btn">Signup</button></a>
+            <a href="#home"><h2><!-- User who logged in --></h2></a>
+            <button id="logout-btn" class="btn logged">Log Out</button>
+        </div>
+        <div><i class="fas fa-bars"></i></div>
+    </header>
+
+    <!-- Heading Section Ends -->
+
+    <!-- Home section starts -->
+
+    <section class="home" id="home">
+
+        <!-- Login Form -->
+        <form action="post" id="login" class="login-form">
+            <h3>login now</h3>
+            <input type="email" class="login-mail box" placeholder="your email">
+            <input type="password" class="login-password box" placeholder="enter your password">
+            <p class="forgot-pa">forget password <a href="#">click here</a></p>
+            <p>don't have an account <a class="to-signup" href="#">create now</a></p>
+            <input type="submit" value="login now" class="btn">
+        </form>
+
+        <!-- Forgot password Form -->
+        <form action="post" id="forgot-pass" class="forgot-pass">
+            <h3>Forgot your password?</h3>
+            <input type="email" class="forgot-mail box" placeholder="your email">
+            <input type="password" class="forgot-password box" placeholder="enter new password">
+            <input type="submit" value="update password" class="btn">
+        </form>
+
+        <!-- Sign up Form -->
+        <form action="post" id="sign-up" class="signup-form">
+            <h3>sign-up</h3>
+            <input type="text" placeholder="Enter First Name" class="box fName">
+            <input type="text" placeholder="Enter Last Name" class="box lName">
+            <input type="email" placeholder="your email" class="box email">
+            <input type="number" placeholder="Enter phone number" class="box phoneNo">
+            <input type="password" placeholder="enter your password" class="box password"><br>
+            <p>already have account? <a class="to-login" href="#">login now</a></p>
+            <input type="submit" value="Sign Up" class="btn">
+        </form>
+
+        <!-- My courses -->
+        <div class="myCourses">
+            <div><i class="fas fa-times"></i></div>
+            <h3>My Courses</h3>
+            <hr>
+            <ul><!-- Selected courses --></ul>
+        </div>
+
+        <!-- Payment -->
+        <form action="post" method="POST" class="payment-new">
+            <h3>Payment</h3>
+            <h3 class="course-name"></h3>
+            <h2 class="course-amount"></h2>
+            <div class="input-group">
+                <div class="input-box">
+                    <input type="text" placeholder="First Name" required class="f_name name">
+                    <i class="fa fa-user icon"></i>
+                </div>
+                <div class="input-box">
+                    <input type="text" placeholder="Last Name" required class="l_name name">
+                    <i class="fa fa-user icon"></i>
+                </div>
+            </div>
+            <div class="input-group">
+                <div class="input-box">
+                    <input type="email" placeholder="Email Address" required class="mail name">
+                    <i class="fa fa-envelope icon"></i>
+                </div>
+            </div>
+            
+            <div class="input-group">
+                <div class="input-box">
+                    <h2>Payment Details</h2>
+                    <input type="radio" name="pay" id="bc1" checked class="radio">
+                    <label for="bc1"><span><i class="fa fa-cc-visa"></i>Credit Card</span></label>
+                    <input type="radio" name="pay" id="bc2" class="radio">
+                    <label for="bc2"><span><i class="fa fa-cc-paypal"></i>Debit Card</span></label>
+                </div>
+            </div>
+            <div class="input-group">
+                <div class="input-box">
+                    <input type="tel" placeholder="Card Number" required class="card_No name">
+                    <i class="fa fa-credit-card icon"></i>
+                </div><br>
+            </div>
+            <div class="input-group">
+                <div class="input-box">
+                    <input type="tel" placeholder="Card CVC" required class="cvc name">
+                    <i class="fa fa-user icon"></i>
+                </div>
+                <div class="input-box">
+                    <select>
+                        <option>Jan</option><option>Feb</option><option>March</option>
+                        <option>April</option><option>May</option><option>June</option>
+                        <option>July</option><option>Aug</option><option>sept</option>
+                        <option>Oct</option><option>Nov</option><option>Dec</option>
+                    </select>
+                    <select>
+                        <option>22</option><option>23</option><option>24</option>
+                        <option>25</option><option>26</option><option>27</option>
+                        <option>28</option><option>29</option><option>30</option>
+                        <option>31</option><option>32</option><option>33</option>
+                    </select>
+                </div>
+            </div>
+            <div class="input-group">
+                <div class="input-box">
+                    <input onsubmit="" type="submit" value="Pay" class="btn">
+                </div>
+            </div>
+        </form>
+
+        <div class="content">
+            <h1>Learn online from home</h1>
+            <p>Now, learning is become so easy <br> Learn most demanded industry required languages form experts and Become an industry ready expert.</p>
+            <a href="#about"><button>Learn More!</button></a>
+        </div>
+
+        <div class="box-container">
+            
+            <a href="#course">
+                <div class="box">
+                    <i class="fas fa-graduation-cap"></i>
+                    <h3>trending courses</h3>
+                    <p>You can learn most demanded courses in industry, and become an expert.</p>
+                </div>
+            </a>
+
+            <a href="#teacher">
+                <div class="box">
+                    <i class="fas fa-fire"></i>
+                    <h3>Industry Experts</h3>
+                    <p>for each course we are having industry experts to teach so you can be up-to-date with technology</p>
+                </div>
+            </a>
+
+            <a href="#contact">
+                <div class="box">
+                    <i class="fas fa-award"></i>
+                    <h3>certifications</h3>
+                    <p>You will receive authorized certification from Educator.</p>
+                </div>
+            </a>
+
+        </div>
+        
+    </section>
+
+    <!-- Home section ends -->
+
+
+    <!-- About section starts -->
+
+    <section class="about" id="about">
+
+        <h1 class="heading">about us</h1>
+        <h3 class="title">start your journey with us</h3>
+
+        <div class="row">
+
+            <div class="content">
+                <h3>Start your journey to a better life with our practical courses</h3>
+                <p>The employment of technology in learning is itself a great advantage as it allows you to learn through videos,
+                     pictures, audio, and gives you the opportunity to gain extensive knowledge about a particular topic</p>
+                <a href="#course"><button>learn more</button></a>
+            </div>    
+
+            <div class="image">
+                <img src="images/about_bg.svg" alt="About_Section_image">
+            </div>
+        </div>
+
+    </sectiom>
+
+    <!-- About section ends -->
+
+
+    <!-- teacher section starts -->
+
+    <section class="teacher" id="teacher">
+
+        <h1 class="heading">Our teacher</h1>
+        <h3 class="title">meet professional trainers</h3>
+
+        <div class="card-container">
+
+            <div class="card">
+                <img src="images/t1.jpg" alt="Teacher_section_image">
+                <h3>Jeneliya Khan</h3>
+                <p>i love teaching. I am a frontend developer, having experience of 15 years in industry.</p>
+                <div class="icons">
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-github"></a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/t2.jpg" alt="Teacher_section_image">
+                <h3>Tukaram shinde</h3>
+                <p>I am a Senior web developer, having experice of 18 years. I am teaching for past 10 years.</p>
+                <div class="icons">
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-github"></a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/t3.jpg" alt="Teacher_section_image">
+                <h3>Kantabai Patil</h3>
+                <p>i am a full stack developer, having industry experience of 7 years. i am teaching for last 4 years.</p>
+                <div class="icons">
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-github"></a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/t4.jpg" alt="Teacher_section_image">
+                <h3>Abhijit bichkule</h3>
+                <p>i am a Senior Graphic designer, having industry experience of 12 years. i am teaching for past 7 years.</p>
+                <div class="icons">
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-github"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- teacher section ends -->
+    
+    <!-- course section starts -->
+
+    <section class="course" id="course">
+
+        <h1 class="heading">Our courses</h1>
+        <h3 class="title">upgrade your skills with newest courses</h3>
+
+        <div class="box-container">
+
+            <div class="box">
+                <i class="fab fa-html5"></i>
+                <h3>HTML5</h3>
+                <p>HTML5 is a markup language used for structuring and presenting content on the World Wide Web.</p>
+                <h2>9.99$</h2>
+                <a href="#home"><button class="btn addlist">Buy</button></a>
+            </div>
+
+            <div class="box" id="css">
+                <i class="fab fa-css3-alt"></i>
+                <h3>CSS3</h3>
+                <p> CSS3 stands for Cascading Style Sheet level 3, which is the advanced version of CSS.</p>
+                <h2>14.99$</h2>
+                <a href="#home"><button class="btn addlist">Buy</button></a>
+            </div>
+
+            <div class="box">
+                <i class="fab fa-js-square"></i>
+                <h3>Javascript</h3>
+                <p>JavaScript is a text-based programming language used both on the client-side and server-side.</p>
+                <h2>20.00$</h2>
+                <a href="#home"><button class="btn addlist">Buy</button></a>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-paint-brush"></i>
+                <h3>Graphic designing</h3>
+                <p>Graphic design is the creation of visual compositions to solve problems and communicate ideas.</p>
+                <h2>20.00$</h2>
+                <a href="#home"><button class="btn addlist">Buy</button></a>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-database"></i>
+                <h3>Database</h3>
+                <p>A database is an organized collection of structured information or data, stored in a computer system.</p>
+                <h2>15.99$</h2>
+                <a href="#home"><button class="btn addlist">Buy</button></a>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-cloud"></i>
+                <h3>Cloud Computing</h3>
+                <p>cloud computing means storing and accessing the data and programs on remote servers hosted on the internet.</p>
+                <h2>30.99$</h2>
+                <a href="#home"><button class="btn addlist">Buy</button></a>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- course section ends -->
+
+    <!-- review section starts -->
+
+    <section class="review" id="review">
+
+        <h1 class="heading">Students review</h1>
+        <h3 class="title">What our students says about us</h3>
+
+        <div class="container">
+
+            <div class="box">
+                <img src="images/review1.jpg" alt="">
+                <h3>Danny Donga</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus ratione dolorem.</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/review2.jpg" alt="">
+                <h3>ching chui</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus ratione dolorem.</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/review3.jpg" alt="">
+                <h3>Hardik pandya</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus ratione dolorem.</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- review section ends -->
+
+    <!-- contact section starts -->
+
+    <section class="contact" id="contact">
+
+        <h1 class="heading">Contact us</h1>
+        <h3 class="title">We love conversations let's talk</h3>
+
+        <div class="row">
+
+            <div class="image">
+                <img src="images/contact_bg.svg" alt="Contact_section_image">
+            </div>
+
+            <div class="form-container">
+                <form id="msg-form" action="" method="post">
+                    <input type="text" class="name con" placeholder="Full Name">
+                    <input type="email" class="email con" placeholder="Enter your e-mail">
+                    <input type="number" class="phoneNo con" placeholder="phone">
+                    <textarea name="" class="message-box con" cols="30" rows="10" placeholder="message"></textarea>
+                    <input id="submit" type="submit" value="message">
+                </form>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- contact section ends -->
+
+    <!-- Footer section starts -->
+
+    <section class="footer">
+
+        <div class="icons">
+                <a href="https://www.facebook.com/login/" class="fab fa-facebook-f"></a>
+                <a href="https://twitter.com/i/flow/login" class="fab fa-twitter"></a>
+                <a href="https://www.instagram.com/accounts/login" class="fab fa-instagram"></a>
+                <a href="https://github.com/Prpawar2001" class="fab fa-github"></a>
+                <a href="https://in.pinterest.com/login/" class="fab fa-pinterest"></a>
+        </div>
+
+        <div class="credit">created by <span>Prathamesh Pawar</span> | all rights reserved.</div>
+    </section>
+
+    <!-- footer section ends -->
+
+    <!-- jQuery CDN link  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- custom javascript link -->
+    <script src="main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>  
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
+</html>

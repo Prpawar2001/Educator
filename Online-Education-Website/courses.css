@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
+
+:root{
+    --pink:#FF046F;
+    --voilet:#C63BFA;
+    --white: #fff;
+    --black: #222;
+    --green: #bac34e;
+    --light-color: #666;
+    --light-bg: #f3f3f3;
+    --border: .1rem solid rgba(0,0,0,.1);
+    --box-shadow: 0 .1rem 1rem rgba(0,0,0,.1);
+}
+
+*{
+    font-family: 'Roboto', sans-serif;
+    text-transform: capitalize;
+    text-decoration: none;
+    outline: none;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    transition: .2s linear;
+}
+
+*::selection{
+    background: var(--pink);
+    color: #fff;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body{
+    background: #fff;
+    z-index: 0;
+}
+
+/* navbar */
+
+nav {
+    letter-spacing: .1rem;
+    font-weight: 500;
+}
+.app-logo{
+    font-size: 2.5rem;
+    color: var(--voilet);
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.app-logo i{
+    color: var(--pink);
+}
+
+.app-logo a{
+    
+}
+
+nav h1{
+    color: var(--pink);
+    margin: 2rem 4rem;
+}
+
+/* content section */
+
+.content{
+    display: flexbox;
+    margin: 10rem 8rem;
+    font-size: 1.5rem;
+}
+
+.content h1{
+    font-weight: 400;
+    display: block;
+    color: var(--pink);
+    cursor: pointer;
+}
+
+.content h2{
+    font-weight: 400;
+    display: block;
+    color: var(--voilet);
+}
+
+.content div{
+    display: none;
+    position: relative;
+    width: 100%;
+    border: var(--border);
+    box-shadow: var(--box-shadow);
+    margin-bottom: 10rem;
+}
+.content div.active{
+    display: block;
+}
+.content div h3{
+    font: 1.2rem;
+    position: relative;
+    left: 65rem;
+    bottom: 26.5rem;
+}
+.content div img{
+    height: 60rem;
+    width: 90rem;
+    display: block;
+    margin: auto;
+}
+
+/* Video section */
+
+.video{
+    width: 100%;
+    align-items: center;
+}
+
+.video iframe{
+    display: block;
+    margin: auto;
+}
+
+.video .btn{
+    margin: auto;
+    padding: .8rem 3rem;
+    display: block;
+    background: none;
+    border: .1rem solid var(--pink);
+    border-radius: .5rem;
+    color: var(--pink);
+    font-size: 2rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.video .btn:hover{
+    background: var(--pink);
+    color: #fff;
+}
